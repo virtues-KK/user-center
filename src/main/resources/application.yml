@@ -1,0 +1,21 @@
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://39.104.165.143:30002/eureka
+spring:
+  application:
+    name: user
+  profiles:
+    include: db
+  jooq:
+    sql-dialect: mysql
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+server:
+  port: 30023
+jwt:
+  header: Authorization
+logging:
+  level:
+    root: info
+
